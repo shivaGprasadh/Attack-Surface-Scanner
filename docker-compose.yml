@@ -4,7 +4,7 @@ services:
   app:
     build: .
     ports:
-      - "5000:5000"
+      - "5002:5002"
     environment:
       - DATABASE_URL=postgresql://asmt_user:asmt_password@db:5432/asmt_db
       - SESSION_SECRET=your_secure_random_string
