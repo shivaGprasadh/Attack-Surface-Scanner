@@ -69,23 +69,28 @@ pip install wtforms==3.0.1
    ```bash
    sudo -u postgres psql
    ```
+   or
+   ```bash
+    psql -U $(whoami) -d postgres
+   ```
 
-2. Create a database user:
+
+3. Create a database user:
    ```sql
    CREATE USER asmt_user WITH PASSWORD 'your_secure_password';
    ```
 
-3. Create a database:
+4. Create a database:
    ```sql
    CREATE DATABASE asmt_db OWNER asmt_user;
    ```
 
-4. Grant privileges:
+5. Grant privileges:
    ```sql
    GRANT ALL PRIVILEGES ON DATABASE asmt_db TO asmt_user;
    ```
 
-5. Exit PostgreSQL:
+6. Exit PostgreSQL:
    ```sql
    \q
    ```
