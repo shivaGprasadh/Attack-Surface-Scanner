@@ -103,7 +103,7 @@ python main.py
 ### Production Mode (with Gunicorn)
 
 ```bash
-gunicorn --bind 0.0.0.0:5000 --workers 4 main:app
+gunicorn --bind 0.0.0.0:5002 --workers 4 main:app
 ```
 
 ## Deployment Options
@@ -117,7 +117,7 @@ gunicorn --bind 0.0.0.0:5000 --workers 4 main:app
 
 2. Run the container:
    ```bash
-   docker run -d -p 5000:5000 \
+   docker run -d -p 5002:5002 \
      -e DATABASE_URL=postgresql://username:password@hostname:port/dbname \
      -e SESSION_SECRET=your-secure-random-string \
      --name attack-surface attack-surface-management
