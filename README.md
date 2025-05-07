@@ -65,7 +65,7 @@ The application will automatically create the necessary tables on startup if the
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/attack-surface-management.git
+   git clone https://github.com/shivaGprasadh/attack-surface-management.git
    cd attack-surface-management
    ```
 
